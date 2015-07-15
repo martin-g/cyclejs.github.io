@@ -413,7 +413,7 @@ We could create functions to remove this duplication, as such:
 function renderSlider(label, value, unit, id, min, max) {
   return h('div', [
     '' + label + ' ' + value + unit,
-    h('input#' + id, {type: 'range', min, max, value})
+    h('input#' + id, {type: 'range', min: min, max: max, value: value})
   ]);
 }
 
